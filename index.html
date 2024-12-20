@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation de la structure hiérarchique d'un répertoire avec D3.js</title> 
+    <link href="style.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+  <h1 class="fade-in">Visualisation de la structure hiérarchique d'un répertoire avec D3.js</h1>
+  <h3 id="file-structure" class="fade-in">Veuillez télécharger un dossier.</h3>
+  <div style="text-align: center;" class="fade-in">
+    <input type="file" id="fileInput" webkitdirectory mozdirectory />
+  </div>
+
+  <div class="container">
+    <!-- Indented tree -->
+    <div class="chart-container fade-in scrollable" id="Indentedtree">
+        <h2>Indented Tree</h2>
+        <svg id="IndentedtreeSVG"></svg>
+        <p class="definition">
+          L'arbre indenté est une représentation hiérarchique des données sous forme de liste imbriquée. 
+          Il est utile pour visualiser les structures de données en forme d'arbre, comme les systèmes de fichiers. 
+          Cette visualisation est adaptée à notre structure de données car elle permet de voir clairement la hiérarchie des dossiers et des fichiers.
+        </p>
+    </div>
+
+    <!-- Icicle Chart -->
+    <div class="chart-container fade-in scrollable" id="IcicleChart">
+        <h2>Icicle Chart</h2>
+        <svg id="icicle"></svg>
+        <p class="definition">
+          Le diagramme Icicle est une visualisation hiérarchique qui utilise des rectangles empilés pour représenter les niveaux de la hiérarchie. 
+          Il est utile pour visualiser les structures de données imbriquées et permet de voir la proportion de chaque élément par rapport à l'ensemble. 
+          Cette visualisation est adaptée à notre structure de données car elle montre clairement la répartition des fichiers et des dossiers.
+        </p>
+    </div>
+  </div>
+
+  <div class="Auteurs ressources fade-in">
+    <h4>Auteurs : </h4>
+    <div>Brenda DJIGUEMDE</div>
+    <div>Michel BOSSECK</div>
+    <div>Boris NKWAMO</div>
+  </div>
+
+  <div class="ressources fade-in">
+    <h4>Ressources : </h4>
+    <div><a href="https://observablehq.com/@d3/indented-tree#data">indented-tree</a></div>
+    <div><a href="https://observablehq.com/@d3/icicle-component">icicle</a></div>
+  </div>
+  <script src="visu.js"></script>
+</body>
+</html>

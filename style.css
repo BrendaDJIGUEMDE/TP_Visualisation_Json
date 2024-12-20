@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1E3A8A, #4CAF50);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+h1, h3 {
+  text-align: center;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.chart-container:hover {
+  transform: scale(1.05);
+}
+.scrollable {
+  overflow: auto;
+  max-height: 400px;
+  max-width: 100%;
+}
+svg {
+  width: 100%;
+  height: auto;
+}
+.ressources {
+  text-align: center;
+  margin: 20px;
+}
+.ressources a {
+  color: white;
+  text-decoration: none;
+}
+.ressources a:hover {
+  text-decoration: underline;
+}
+.Auteurs div{
+  color: white;
+  text-decoration: none;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.definition {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
